@@ -101,7 +101,7 @@ client.on("message", async message => {
 <a:se:806666799977857034>\`m!anti bot [on/off]\`
 <a:se:806666799977857034>\`m!anti problem [on/off]\`
 
-[Support](https://discord.gg/QZdDqjtdd3) - [Website](https://aerial-catkin-jumbo.glitch.me/) - [Vote](https://top.gg/bot/711328570374619207)
+[Support](https://discord.gg/d-b) - [Website]() - [Vote](https://top.gg/bot/735442440839888917)
 
 `);
 
