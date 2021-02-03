@@ -167,7 +167,7 @@ client.on("message", async message => {
       )
       .setColor(color)
       .setDescription(
-        `🔒 | Locked Channel
+        `<a:mars_51:806647631836086292> | Locked Channel
 Channel Name : <#${message.channel.id}>
 Locked By : <@${message.author.id}>
 Channel Status : Send Message : ${ghallatw}
@@ -210,7 +210,7 @@ client.on("message", async message => {
       )
       .setColor(color)
       .setDescription(
-        `🔓 | UnLocked Channel
+        `<a:mars_51:806647631836086292> | UnLocked Channel
 Channel Name : <#${message.channel.id}>
 Locked By : <@${message.author.id}>
 Channel Status : Send Message : ${rastw}
