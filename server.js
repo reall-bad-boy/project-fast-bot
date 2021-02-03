@@ -67,6 +67,7 @@ client.on("message", async message => {
     let help = new Discord.MessageEmbed()
       .setColor(color)
       .setAuthor(message.author.username, message.author.AvatarURL)
+      .setImage("https://cdn.discordapp.com/attachments/801152346280951860/806659192206262312/giphy.gif")
       .setThumbnail(message.author.avatarURL())
       .setTitle(`Click Here To Add : Security`)
       .setURL(
@@ -80,8 +81,8 @@ client.on("message", async message => {
 \`m!bot\`
 
 <a:mars_35:761222393267748906> __**Moderation Commands**__ <a:mars_35:761222393267748906>
-\`m!lock\`
-\`m!unlock\`
+\`m!lock\` <:tru1:806657367810768896>
+\`m!unlock\` <:tru2:806657369450348544>
 \`m!clear\`
 \`m!ban\` : @User
 \`m!kick\`: @User
