@@ -75,10 +75,10 @@ client.on("message", async message => {
       ).setDescription(`
 
 <a:mars_35:761222393267748906> __**Info Commands**__ <a:mars_35:761222393267748906>
-\`m!userinfo\`
-\`m!serverinfo\`
-\`m!ping\`
-\`m!bot\`
+<a:lot:806664561901174814>\`m!userinfo\`
+<a:lot:806664561901174814>\`m!serverinfo\`
+<a:lot:806664561901174814>\`m!ping\`
+<a:lot:806664561901174814>\`m!bot\`
 
 <a:mars_35:761222393267748906> __**Moderation Commands**__ <a:mars_35:761222393267748906>
 \`m!lock\` <:tru1:806657367810768896>
@@ -92,14 +92,14 @@ client.on("message", async message => {
 \`m!bans\`,
 
 <a:mars_35:761222393267748906> __**Security Commands**__ <a:mars_35:761222393267748906>
-\`m!anti kick\`[Number]<a:marss:806662661240258580>
-\`m!anti ban\`[Number]
-\`m!anti roleC\`[Number]
-\`m!anti roleD\`[Number]
-\`m!anti channelC\`[Number]
-\`m!anti channelD\`[Number]
-\`m!anti bot [on/off]\`
-\`m!anti problem [on/off]\`
+<a:lef:806663858663718934>\`m!anti kick\`[Number]
+<a:lef:806663858663718934>\`m!anti ban\`[Number]
+<a:lef:806663858663718934>\`m!anti roleC\`[Number]
+<a:lef:806663858663718934>\`m!anti roleD\`[Number]
+<a:lef:806663858663718934>\`m!anti channelC\`[Number]
+<a:lef:806663858663718934>\`m!anti channelD\`[Number]
+<a:lef:806663858663718934>\`m!anti bot [on/off]\`
+<a:lef:806663858663718934>\`m!anti problem [on/off]\`
 
 [Support](https://discord.gg/QZdDqjtdd3) - [Website](https://aerial-catkin-jumbo.glitch.me/) - [Vote](https://top.gg/bot/711328570374619207)
 
