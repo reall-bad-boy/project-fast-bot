@@ -92,7 +92,7 @@ client.on("message", async message => {
 \`m!bans\`,
 
 <a:mars_35:761222393267748906> __**Security Commands**__ <a:mars_35:761222393267748906>
-\`m!anti kick\`[Number]
+\`m!anti kick\`[Number]<a:marss:806662661240258580>
 \`m!anti ban\`[Number]
 \`m!anti roleC\`[Number]
 \`m!anti roleD\`[Number]
