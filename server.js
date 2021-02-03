@@ -67,7 +67,7 @@ client.on("message", async message => {
     let help = new Discord.MessageEmbed()
       .setColor(color)
       .setAuthor(message.author.username, message.author.AvatarURL)
-      .setImage("https://cdn.discordapp.com/attachments/801152346280951860/806659192206262312/giphy.gif")
+      .setImage("https://media.discordapp.net/attachments/792901978992410654/806670505943105537/20210204_023939.gif?width=427&height=427")
       .setThumbnail(message.author.avatarURL())
       .setTitle(`Click Here To Add : Security`)
       .setURL(
