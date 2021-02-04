@@ -155,7 +155,9 @@ client.on("message", async message => {
     if (!message.channel.guild)
       return message.channel.send("Sorry This Command Only For Servers.<a:mars_27:761215742866751509>");
 
-    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
+    if (!message.member.hasPermission("MANAGE_CHANNELS")) return message.channel.send(
+        "**Sorry , But You Dont Have `MANAGE_MESSAGE` Permission <a:mars_27:761215742866751509>.**"
+      );
     if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
       return;
     message.channel.updateOverwrite(message.guild.id, {
@@ -198,7 +200,9 @@ client.on("message", async message => {
     if (!message.channel.guild)
       return message.channel.send("Sorry This Command Only For Servers.<a:mars_27:761215742866751509>");
 
-    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
+    if (!message.member.hasPermission("MANAGE_CHANNELS")) return message.channel.send(
+        "**Sorry , But You Dont Have `MANAGE_MESSAGE` Permission <a:mars_27:761215742866751509>.**"
+      );
     if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
       return;
     message.channel.updateOverwrite(message.guild.id, {
