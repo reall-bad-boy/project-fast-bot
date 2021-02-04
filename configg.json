@@ -452,5 +452,32 @@
     "chaCrLimit": 2,
     "roleCrLimits": 2,
     "time": 30
+  },
+  "783503955287998464": {
+    "banLimit": 2,
+    "chaDelLimit": 2,
+    "roleDelLimit": 2,
+    "kickLimits": 2,
+    "chaCrLimit": 2,
+    "roleCrLimits": 2,
+    "time": 30
+  },
+  "764078532346904606": {
+    "banLimit": 2,
+    "chaDelLimit": 2,
+    "roleDelLimit": 2,
+    "kickLimits": 2,
+    "chaCrLimit": 2,
+    "roleCrLimits": 2,
+    "time": 30
+  },
+  "773696778192551936": {
+    "banLimit": 2,
+    "chaDelLimit": 2,
+    "roleDelLimit": 2,
+    "kickLimits": 2,
+    "chaCrLimit": 2,
+    "roleCrLimits": 2,
+    "time": 30
   }
 }
