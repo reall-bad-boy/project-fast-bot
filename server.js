@@ -100,8 +100,9 @@ client.on("message", async message => {
 <a:se:806666799977857034>\`m!anti channelD\`[Number]
 <a:se:806666799977857034>\`m!anti bot [on/off]\`
 <a:se:806666799977857034>\`m!problem [on/off]\`
+<a:se:806666799977857034>\`m!setting \`
 
-[Support](https://discord.gg/d-b) - [Website]() - [Vote](https://top.gg/bot/735442440839888917)
+[Support](https://discord.gg/d-b) - [Website](https://dashboard-security.glitch.me/) - [Vote](https://top.gg/bot/735442440839888917)
 
 `);
 
