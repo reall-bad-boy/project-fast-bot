@@ -1347,7 +1347,8 @@ client.on("message", message => {
       .addField("**My ID**", `[ ${client.user.id} ]`, true)
       .addField("**DiscordJS**", `[ ${Discord.version} ]`, true)
       .addField("**NodeJS**", `[ ${process.version} ]`, true)
-      .addField("**Bot-Owners**", `[MrZalm , NAQEB]`, true)
+      .addField("**Bot-Owners**", `[1-@!             ᘉᗩᖇᔕ ᵈⁱˢᶜᵒʳᵈ ᵇᵒᵗ#0001]
+[2-!           𝑍𝑎𝑛𝑎ᵈⁱˢᶜᵒʳᵈ ᵇᵒᵗ#4702]`, true)
       .addField("**My Prefix**", `[ ${prefix} ]`, true)
       .addField("**My Language**", `[ Java Script ]`, true)
       .setFooter("Security");
@@ -1520,11 +1521,24 @@ client.on("message", async message => {
   }
 });
 
-//////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
 
 let spread = JSON.parse(fs.readFileSync("./spread.json", "utf8"));
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "anti problem off")) {
+  if (message.content.startsWith(prefix + "problem off")) {
+    if (cooldown.has(message.author.id)) {
+      return message.channel
+        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .then(m => {
+          m.delete({ timeout: cdtime * 600 });
+        });
+    }
+
+    cooldown.add(message.author.id);
+
+    setTimeout(() => {
+      cooldown.delete(message.author.id);
+    }, cdtime * 1000);
     if (!message.channel.guild) return;
     if (!message.member.hasPermission("MANAGE_GUILD"))
       return message.channel.send(
@@ -1533,7 +1547,7 @@ client.on("message", message => {
     spread[message.guild.id] = {
       onoff: "Off"
     };
-    message.channel.send(`**AntiProblem Is \`Disable\` .**`);
+    message.channel.send(`**AntiProblem Is \`Disable\` <a:mars_44:791126119004110919>.**`);
     fs.writeFile("./spread.json", JSON.stringify(spread), err => {
       if (err)
         console.error(err).catch(err => {
@@ -1544,7 +1558,20 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "anti problem on")) {
+  if (message.content.startsWith(prefix + "problem on")) {
+    if (cooldown.has(message.author.id)) {
+      return message.channel
+        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .then(m => {
+          m.delete({ timeout: cdtime * 600 });
+        });
+    }
+
+    cooldown.add(message.author.id);
+
+    setTimeout(() => {
+      cooldown.delete(message.author.id);
+    }, cdtime * 1000);
     if (!message.channel.guild) return;
     if (!message.member.hasPermission("MANAGE_GUILD"))
       return message.channel.send(
@@ -1553,7 +1580,7 @@ client.on("message", message => {
     spread[message.guild.id] = {
       onoff: "On"
     };
-    message.channel.send(`**AntiProblem Is \`Enable\` .**`);
+    message.channel.send(`**AntiProblem Is \`Enable\` <a:mars_44:791126119004110919>.**`);
     fs.writeFile("./spread.json", JSON.stringify(spread), err => {
       if (err)
         console.error(err).catch(err => {
