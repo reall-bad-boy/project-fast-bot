@@ -39,12 +39,12 @@ const cmd = require("node-cmd");
 const prefix = "m!";
 const cooldown = new Set();
 const cdtime = 7;
-client.login("NzIyNDcwODc4NjM3NDU3NDkx.XujjcA.SUZynE0Sc_nVr-iU3DlUsSS2UHw");
+client.login("NzM1NDQyNDQwODM5ODg4OTE3.XxgUJQ.hIgaQwuUQpBYFHsgTNQVcmR9S4c");
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
   console.log(`Guilds: ${client.guilds.cache.size}`);
   console.log(`Users: ${client.users.cache.size}`);
-  client.user.setActivity(`Type ${prefix}help `, { Type: "Playing" });
+  
 });
 
 //////
