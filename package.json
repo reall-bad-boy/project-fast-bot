@@ -24,7 +24,8 @@
     "table": "^6.0.7",
     "node-cmd": "^4.0.0",
     "gif-search": "^2.0.1",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "fs-extra": "^9.0.1"
   },
   "engines": {
     "node": "12.x"
