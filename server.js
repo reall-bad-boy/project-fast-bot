@@ -51,6 +51,8 @@ client.on("ready", () => {
 
 client.on("message", async message => {
   if (message.content.startsWith(prefix + "help")) {
+    
+    
     if (cooldown.has(message.author.id)) {
       return message.channel
         .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
