@@ -39,13 +39,25 @@ const cmd = require("node-cmd");
 const prefix = "m!";
 const cooldown = new Set();
 const cdtime = 7;
-client.login("");
+client.login(process.env.mars);
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
   console.log(`Guilds: ${client.guilds.cache.size}`);
   console.log(`Users: ${client.users.cache.size}`);
   
 });
+client.on("ready", () => {
+setInterval(() => {
+  console.log(`${client.user.username} owner mars,
+)}, server ${client.guilds.cache.size}
+  `);
+  client.user.setActivity(
+  `m!help | Uplodes new code`,
+  );
+}, 2000);
+})
+client.on("warn", (info) => console.log(info));
+client.on("error", console.error);
 
 //////
 
@@ -60,9 +72,7 @@ client.on("message", async message => {
           m.delete({ timeout: cdtime * 600 });
         });
     }
-
     cooldown.add(message.author.id);
-
     setTimeout(() => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
