@@ -99,7 +99,7 @@ client.on("message", async message => {
 <a:se:806666799977857034>\`m!anti channelC\`[Number]
 <a:se:806666799977857034>\`m!anti channelD\`[Number]
 <a:se:806666799977857034>\`m!anti bot [on/off]\`
-<a:se:806666799977857034>\`m!anti problem [on/off]\`
+<a:se:806666799977857034>\`m!problem [on/off]\`
 
 [Support](https://discord.gg/d-b) - [Website]() - [Vote](https://top.gg/bot/735442440839888917)
 
