@@ -48,9 +48,6 @@ client.on("ready", () => {
 });
 client.on("ready", () => {
 setInterval(() => {
-  console.log(`${client.user.username} owner mars,
-)}, server ${client.guilds.cache.size}
-  `);
   client.user.setActivity(
   `m!help | Uplodes new code`,
   );
