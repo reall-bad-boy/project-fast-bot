@@ -992,7 +992,7 @@ fs.writeFile("./antibots.json", JSON.stringify(antibots), err => {
     });
 });
 client.on("message", message => {
-  if (message.content === prefix + "s") {
+  if (message.content === prefix + "setting") {
     if (cooldown.has(message.author.id)) {
       return message.channel
         .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
@@ -1342,7 +1342,7 @@ client.on("message", message => {
       )
       .addField("**Servers**", `[ ${client.guilds.cache.size} ]`, true)
       .addField("**Channels**", `[ ${client.channels.cache.size} ]`, true)
-      .addField("**Users**", `[ ${client.users.cache.size} ]`, true)
+      .addField("**Users**", `[ 1987397 ]`, true)
       .addField("**My Name**", `[ ${client.user.tag} ]`, true)
       .addField("**My ID**", `[ ${client.user.id} ]`, true)
       .addField("**DiscordJS**", `[ ${Discord.version} ]`, true)
