@@ -17,7 +17,7 @@ const listener = app.listen(process.env.PORT, () => {
 });
 /////////////////////////////////////////////////////////
 const { Client, MessageEmbed } = require("discord.js");
-var { Util } = require("discord.js");
+var { Util, RichEmbed } = require("discord.js");
 const client = new Client({ disableEveryone: true });
 const canvas = require("canvas");
 const Canvas = require("canvas");
@@ -1647,3 +1647,65 @@ client.on('message',async message => {
   }
   
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+client.on("guildMemberAdd", member => {
+  let m = member.user;
+  var embed = new RichEmbed()
+  .setTitle("بەخێربێیت بۆ سێرڤەرەکەمان دڵم تکایە ڕێزی خۆت بگرە")
+ .addField("ناو:", member.user)
+ 
+ 
+ 
+ 
+ 
+  .addField("ئایدی ئەندام:", member.id)
+ 
+  .addField("تۆ کەسی ژمارە:", member.guild.memberCount)   
+ 
+ 
+ 
+  .setThumbnail(m.avatarURL)
+ 
+ 
+ 
+  .setImage("https://cdn.discordapp.com/attachments/712441079055777895/712441107660800020/image0.jpg")
+   .setColor("BLACK")
+    .setFooter(`${member.user.username}`, member.user.avatarURL) 
+    .setTimestamp();
+  var channel = member.guild.channels.get("809028885923627049");
+  if (!channel) return;
+  channel.send({ embed: embed });
+});
+ 
+ 
+ 
+client.on("message", async message => {
+ 
+    let prefix = "t.";    //lera prefix bot da bne bo test bzana esh aka!!
+ 
+const args = message.content.slice(prefix.length).trim().split(/\s+/g);
+ 
+const command = args.shift().toLowerCase();
+ 
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
+if(command == (prefix + 'bawan')){      // Bo teste bot prefix bnusa lagal aw naway ka la jey bawan daenusi
+ 
+    client.emit('guildMemberAdd', message.member)
+ return message.channel.send('mazbwta')
+  }
+ 
+ 
+ 
+});
