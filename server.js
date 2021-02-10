@@ -1246,7 +1246,7 @@ client.on("message", prof => {
     }, cdtime * 1000);
     var professor = new Discord.MessageEmbed()
       .setThumbnail(prof.author.avatarURL())
-      .setColor("b")
+      .setColor("BLACK")
       .setTitle("Your Info User.")
       .addField("**Your Name**", `<@${prof.author.id}>`)
       .addField("**Your ID**", `${prof.author.id}`)
@@ -1342,7 +1342,7 @@ client.on("message", message => {
       .setThumbnail(
         `https://cdn.discordapp.com/attachments/772758556848029727/802994883378806824/image0.jpg`
       )
-      .setColor("#808080")
+      .setColor("BLACK")
       .setTitle(`Info about ${client.user.username}.`)
       .addField(
         "**My Ping**",
