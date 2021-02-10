@@ -96,8 +96,8 @@ __**Info Commands**__
 \`t.bot\`
 
 __**Moderation Commands**__ 
-\`t.lock\` <:tru1:806657367810768896>
-\`t.unlock\` <:tru2:806657369450348544>
+\`t.lock\` 
+\`t.unlock\` 
 \`t.clear\`
 \`t.ban\` : @User
 \`t.kick\`: @User
@@ -107,14 +107,14 @@ __**Moderation Commands**__
 \`t.bans\`,
 
 __**Security Commands**__ 
-\`t.anti kick\`[Number]
-\`t.anti ban\`[Number]
-\`t.anti roleC\`[Number]
-\`t.anti roleD\`[Number]
-\`t.anti channelC\`[Number]
-\`t.anti channelD\`[Number]
-\`t.anti bot [on/off]\`
-\`t.problem [on/off]\`
+\`t.anti kick\` [Number]
+\`t.anti ban\` [Number]
+\`t.anti roleC\` [Number]
+\`t.anti roleD\` [Number]
+\`t.anti channelC\` [Number]
+\`t.anti channelD\` [Number]
+\`t.anti bot\` on/off]
+\`t.problem\` on/off]
 \`t.setting \`
 
 [Support](https://discord.gg/d-b) - [Website](https://dashboard-security.glitch.me/) - [Vote](https://top.gg/bot/735442440839888917)
@@ -1567,7 +1567,7 @@ client.on("message", message => {
     spread[message.guild.id] = {
       onoff: "Off"
     };
-    message.channel.send(`**AntiProblem Is \`Disable\` <a:mars_44:791126119004110919>.**`);
+    message.channel.send(`**AntiProblem Is \`Disable\` **`);
     fs.writeFile("./spread.json", JSON.stringify(spread), err => {
       if (err)
         console.error(err).catch(err => {
@@ -1581,7 +1581,7 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "problem on")) {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
