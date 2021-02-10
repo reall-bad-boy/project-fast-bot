@@ -179,8 +179,8 @@ client.on("message", async message => {
         `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`
       )
       .setColor(color)
-      .setDescription("
-                      Locked Channel")
+      .setDescription(
+                      `Locked Channel
 Channel Name : <#${message.channel.id}>
 Locked By : <@${message.author.id}>
 Channel Status : Send Message : ${ghallatw}
@@ -225,7 +225,7 @@ client.on("message", async message => {
       )
       .setColor(color)
       .setDescription(
-         UnLocked Channel
+         `UnLocked Channel
 Channel Name : <#${message.channel.id}>
 Locked By : <@${message.author.id}>
 Channel Status : Send Message : ${rastw}
@@ -1646,3 +1646,24 @@ client.on("message", message => {
     return message.reply(`**You Dont Have \`MENTION_EVERYONE\` Permission **`);
   }
 });
+
+
+client.on('message', message => {
+    if (message.content.startsWith("$avatar")) {
+        var mentionned = message.mentions.users.first();
+    var x5bzm;
+      if(mentionned){
+          var x5bzm = mentionned;
+      } else {
+          var x5bzm = message.author;
+ 
+      }
+        const embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setImage(`${x5bzm.avatarURL}`)
+      message.channel.sendEmbed(embed);
+    }
+});
+
+
+
