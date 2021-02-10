@@ -1602,20 +1602,7 @@ client.on("message", message => {
   }
 });
 
-client.on("message", message => {
-  var args = message.content.split(/[ ]+/);
-  if (message.content.includes("http")) {
-    if (message.member.hasPermission("MANAGE_EMOJIS")) return;
-    if (!message.channel.guild) return;
-    if (!spread[message.guild.id])
-      spread[message.guild.id] = {
-        onoff: "Off"
-      };
-    if (spread[message.guild.id].onoff === "Off") return;
-    message.delete();
-    return message.reply(`**You Dont Have \`MANAGE_EMOJIS\` Permission **`);
-  }
-});
+
 client.on("message", message => {
   var args = message.content.split(/[ ]+/);
   if (message.content.includes("@everyone")) {
@@ -1649,18 +1636,3 @@ client.on("message", message => {
 
 
 
-client.on('message' , message => {
- 
-    if (message.content ===  "t.support") {
-        if(!message.channel.guild) return message.reply('**this command only for server**');
-     const embed = new Discord.RichEmbed()
- .setColor("BLACK")
- .setThumbnail(client.user.avatarURL)     
- .setDescription(" ***welcome To server support*** " + `
- **
-Link server | https://discord.gg/JJnhXwP
- **
-`);
-  message.author.sendEmbed(embed);
-   }
-});
