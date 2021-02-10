@@ -39,7 +39,7 @@ const cmd = require("node-cmd");
 const prefix = "t.";
 const cooldown = new Set();
 const cdtime = 7;
-client.login("Nzc2MDQzNjg5MzM2MTExMTA0.X6vJAQ.jXMBUdnRsK7yNWK5NBcAykxiDYY");
+client.login("Nzc2MDQzNjg5MzM2MTExMTA0.X6vJAQ.EqNmwJlfJBObnZ6v2JHFB9EPi8w");
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
 
@@ -1636,3 +1636,14 @@ client.on("message", message => {
 
 
 
+client.on('message',async message => {
+  if(message.content.startsWith(prefix + "uptime")) { 
+    let rozh= Math.floor(client.uptime / 86400000);
+    let katzhmer= Math.floor(client.uptime / 3600000) % 24;
+    let daqa= Math.floor(client.uptime / 60000) % 60;
+    let chrka= Math.floor(client.uptime / 1000) % 60;
+    
+    return message.channel.send(`__Uptime:__\n${rozh}d ${katzhmer}h ${daqa}m ${chrka}s`);
+  }
+  
+})
