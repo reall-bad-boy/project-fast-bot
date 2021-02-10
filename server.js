@@ -74,9 +74,9 @@ client.on("message", async message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     let help = new Discord.MessageEmbed()
-      .setColor(color)
+      .setColor("BLACK")
       .setAuthor(message.author.username, message.author.AvatarURL)
-      .setImage("https://media.discordapp.net/attachments/792901978992410654/806670505943105537/20210204_023939.gif?width=427&height=427")
+      .setImage("https://cdn.discordapp.com/attachments/804500672849772564/809057459997114383/image0.gif")
       .setThumbnail(message.author.avatarURL())
       .setTitle(`Click Here To Add : Security`)
       .setURL(
