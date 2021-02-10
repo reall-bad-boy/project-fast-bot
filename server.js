@@ -111,7 +111,7 @@ __**Security Commands**__
 \`t.problem\` on/off]
 \`t.setting \`
 
-[Support](https://discord.gg/d-b) - [Website](https://dashboard-security.glitch.me/) - [Vote](https://top.gg/bot/735442440839888917)
+[Support](https://discord.gg/JJnhXwP) - [invite bot](https://discord.com/api/oauth2/authorize?client_id=808663216825040917&permissions=8&scope=bot) 
 
 `);
 
@@ -1650,4 +1650,18 @@ client.on("message", message => {
 
 
 
-
+client.on('message' , message => {
+ 
+    if (message.content ===  "t.support") {
+        if(!message.channel.guild) return message.reply('**this command only for server**');
+     const embed = new Discord.RichEmbed()
+ .setColor("BLACK")
+ .setThumbnail(client.user.avatarURL)     
+ .setDescription(" ***welcome To server support*** " + `
+ **
+Link server | https://discord.gg/JJnhXwP
+ **
+`);
+  message.author.sendEmbed(embed);
+   }
+});
