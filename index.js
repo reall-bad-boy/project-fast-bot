@@ -42,8 +42,7 @@ const cdtime = 7;
 client.login("Nzc2MDQzNjg5MzM2MTExMTA0.X6vJAQ.jXMBUdnRsK7yNWK5NBcAykxiDYY");
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
-  console.log(`Guilds: ${client.guilds.cache.size}`);
-  console.log(`Users: ${client.users.cache.size}`);
+
   
 });
 client.on("ready", () => {
