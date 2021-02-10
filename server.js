@@ -83,33 +83,39 @@ client.on("message", async message => {
         `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`
       ).setDescription(`
 
-<a:mars_35:761222393267748906> __**Info Commands**__ <a:mars_35:761222393267748906>
-<a:stt:806668099029696552>\`m!userinfo\`
-<a:stt:806668099029696552>\`m!serverinfo\`
-<a:stt:806668099029696552>\`m!ping\`
-<a:stt:806668099029696552>\`m!bot\`
 
-<a:mars_35:761222393267748906> __**Moderation Commands**__ <a:mars_35:761222393267748906>
-<a:lef:806663858663718934>\`m!lock\` <:tru1:806657367810768896>
-<a:lef:806663858663718934>\`m!unlock\` <:tru2:806657369450348544>
-<a:lef:806663858663718934>\`m!clear\`
-<a:lef:806663858663718934>\`m!ban\` : @User
-<a:lef:806663858663718934>\`m!kick\`: @User
-<a:lef:806663858663718934>\`m!unban\`: Id / all
-<a:lef:806663858663718934>\`m!mute\`: @User / Id
-<a:lef:806663858663718934>\`m!unmute\`: @User / Id
-<a:lef:806663858663718934>\`m!bans\`,
 
-<a:mars_35:761222393267748906> __**Security Commands**__ <a:mars_35:761222393267748906>
-<a:se:806666799977857034>\`m!anti kick\`[Number]
-<a:se:806666799977857034>\`m!anti ban\`[Number]
-<a:se:806666799977857034>\`m!anti roleC\`[Number]
-<a:se:806666799977857034>\`m!anti roleD\`[Number]
-<a:se:806666799977857034>\`m!anti channelC\`[Number]
-<a:se:806666799977857034>\`m!anti channelD\`[Number]
-<a:se:806666799977857034>\`m!anti bot [on/off]\`
-<a:se:806666799977857034>\`m!problem [on/off]\`
-<a:se:806666799977857034>\`m!setting \`
+
+
+
+
+__**Info Commands**__ 
+\`t.userinfo\`
+\`t.serverinfo\`
+\`t.ping\`
+\`t.bot\`
+
+__**Moderation Commands**__ 
+\`t.lock\` <:tru1:806657367810768896>
+\`t.unlock\` <:tru2:806657369450348544>
+\`t.clear\`
+\`t.ban\` : @User
+\`t.kick\`: @User
+\`t.unban\`: Id / all
+\`t.mute\`: @User / Id
+\`t.unmute\`: @User / Id
+\`t.bans\`,
+
+__**Security Commands**__ 
+\`t.anti kick\`[Number]
+\`t.anti ban\`[Number]
+\`t.anti roleC\`[Number]
+\`t.anti roleD\`[Number]
+\`t.anti channelC\`[Number]
+\`t.anti channelD\`[Number]
+\`t.anti bot [on/off]\`
+\`t.problem [on/off]\`
+\`t.setting \`
 
 [Support](https://discord.gg/d-b) - [Website](https://dashboard-security.glitch.me/) - [Vote](https://top.gg/bot/735442440839888917)
 
