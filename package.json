@@ -25,7 +25,8 @@
     "node-cmd": "^4.0.0",
     "snekfetch": "^4.0.4",
     "table": "^6.0.7",
-    "events.js": "^0.1.4"
+    "events.js": "^0.1.4",
+    "discord.js-commando": "^0.12.1"
   },
   "devDependencies": {},
   "keywords": [],
