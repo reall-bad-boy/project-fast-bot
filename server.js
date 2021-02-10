@@ -1246,7 +1246,7 @@ client.on("message", prof => {
     }, cdtime * 1000);
     var professor = new Discord.MessageEmbed()
       .setThumbnail(prof.author.avatarURL())
-      .setColor("808080")
+      .setColor("b")
       .setTitle("Your Info User.")
       .addField("**Your Name**", `<@${prof.author.id}>`)
       .addField("**Your ID**", `${prof.author.id}`)
