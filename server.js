@@ -36,10 +36,10 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "m!";
+const prefix = "t.";
 const cooldown = new Set();
 const cdtime = 7;
-client.login(process.env.mars);
+client.login("Nzc2MDQzNjg5MzM2MTExMTA0.X6vJAQ.jXMBUdnRsK7yNWK5NBcAykxiDYY");
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
   console.log(`Guilds: ${client.guilds.cache.size}`);
@@ -49,7 +49,7 @@ client.on("ready", () => {
 client.on("ready", () => {
 setInterval(() => {
   client.user.setActivity(
-  `m!help | Uplodes new code`,
+  `t.help | Uplodes new code`,
   );
 }, 2000);
 })
