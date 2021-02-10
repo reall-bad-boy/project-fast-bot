@@ -64,7 +64,7 @@ client.on("message", async message => {
     
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -82,13 +82,7 @@ client.on("message", async message => {
       .setURL(
         `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`
       ).setDescription(`
-
-
-
-
-
-
-
+      
 __**Info Commands**__ 
 \`t.userinfo\`
 \`t.serverinfo\`
@@ -131,7 +125,7 @@ client.on("message", async message => {
   if (message.content.startsWith(prefix + "invite")) {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -157,7 +151,7 @@ client.on("message", async message => {
   if (message.content.startsWith(prefix + "lock")) {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -169,10 +163,10 @@ client.on("message", async message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     if (!message.channel.guild)
-      return message.channel.send("Sorry This Command Only For Servers.<a:mars_27:761215742866751509>");
+      return message.channel.send("Sorry This Command Only For Servers.");
 
     if (!message.member.hasPermission("MANAGE_CHANNELS")) return message.channel.send(
-        "**Sorry , But You Dont Have `MANAGE_MESSAGE` Permission <a:mars_27:761215742866751509>.**"
+        "**Sorry , But You Dont Have `MANAGE_MESSAGE` Permission **"
       );
     if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
       return;
@@ -185,8 +179,8 @@ client.on("message", async message => {
         `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`
       )
       .setColor(color)
-      .setDescription(
-        `<a:mars_51:806647631836086292> | Locked Channel
+      .setDescription("
+                      Locked Channel")
 Channel Name : <#${message.channel.id}>
 Locked By : <@${message.author.id}>
 Channel Status : Send Message : ${ghallatw}
@@ -202,7 +196,7 @@ client.on("message", async message => {
   if (message.content.startsWith(prefix + "unlock")) {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -214,10 +208,10 @@ client.on("message", async message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     if (!message.channel.guild)
-      return message.channel.send("Sorry This Command Only For Servers.<a:mars_27:761215742866751509>");
+      return message.channel.send("Sorry This Command Only For Servers.");
 
     if (!message.member.hasPermission("MANAGE_CHANNELS")) return message.channel.send(
-        "**Sorry , But You Dont Have `MANAGE_MESSAGE` Permission <a:mars_27:761215742866751509>.**"
+        "**Sorry , But You Dont Have `MANAGE_MESSAGE` Permission **"
       );
     if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
       return;
@@ -231,7 +225,7 @@ client.on("message", async message => {
       )
       .setColor(color)
       .setDescription(
-        `<a:mars_51:806647631836086292> | UnLocked Channel
+         UnLocked Channel
 Channel Name : <#${message.channel.id}>
 Locked By : <@${message.author.id}>
 Channel Status : Send Message : ${rastw}
@@ -279,13 +273,13 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "anti")) {
     if (message.author.id !== message.guild.ownerID) 
     return message.channel.send(
-        "**  بەس ئۆنەڕشیڤ،ئەتوانێ ئۆنی بکات <a:mars_27:761215742866751509>**"
+        "**  بەس ئۆنەڕشیڤ،ئەتوانێ ئۆنی بکات **"
       );
     if (message.content.startsWith(prefix + "anti ban")) {
       
       if (cooldown.has(message.author.id)) {
         return message.channel
-          .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+          .send(` | Please wait for 10 second`)
           .then(m => {
             m.delete({ timeout: cdtime * 600 });
           });
@@ -304,13 +298,13 @@ client.on("message", message => {
         );
       config[message.guild.id].banLimit = num;
       message.channel.send(
-        `**${rast}  Changed To : ${config[message.guild.id].banLimit} <a:mars_44:791126119004110919>**`
+        `**${rast}  Changed To : ${config[message.guild.id].banLimit} **`
       );
     }
     if (message.content.startsWith(prefix + "anti kick")) {
       if (cooldown.has(message.author.id)) {
         return message.channel
-          .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+          .send(` | Please wait for 10 second`)
           .then(m => {
             m.delete({ timeout: cdtime * 600 });
           });
@@ -329,13 +323,13 @@ client.on("message", message => {
         );
       config[message.guild.id].kickLimits = num;
       message.channel.send(
-        `**${rast}  Changed To : ${config[message.guild.id].kickLimits} <a:mars_44:791126119004110919>**`
+        `**${rast}  Changed To : ${config[message.guild.id].kickLimits} **`
       );
     }
     if (message.content.startsWith(prefix + "anti roleC")) {
       if (cooldown.has(message.author.id)) {
         return message.channel
-          .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+          .send(` | Please wait for 10 second`)
           .then(m => {
             m.delete({ timeout: cdtime * 600 });
           });
@@ -354,13 +348,13 @@ client.on("message", message => {
         );
       config[message.guild.id].roleDelLimit = num;
       message.channel.send(
-        `**${rast}  Changed To : ${config[message.guild.id].roleDelLimit} <a:mars_44:791126119004110919>**`
+        `**${rast}  Changed To : ${config[message.guild.id].roleDelLimit} **`
       );
     }
     if (message.content.startsWith(prefix + "anti roleD")) {
       if (cooldown.has(message.author.id)) {
         return message.channel
-          .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+          .send(` | Please wait for 10 second`)
           .then(m => {
             m.delete({ timeout: cdtime * 600 });
           });
@@ -379,13 +373,13 @@ client.on("message", message => {
         );
       config[message.guild.id].roleCrLimits = num;
       message.channel.send(
-        `**${rast}  Changed To : ${config[message.guild.id].roleCrLimits} <a:mars_44:791126119004110919>**`
+        `**${rast}  Changed To : ${config[message.guild.id].roleCrLimits} **`
       );
     }
     if (message.content.startsWith(prefix + "anti channelC")) {
       if (cooldown.has(message.author.id)) {
         return message.channel
-          .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+          .send(` | Please wait for 10 second`)
           .then(m => {
             m.delete({ timeout: cdtime * 600 });
           });
@@ -404,13 +398,13 @@ client.on("message", message => {
         );
       config[message.guild.id].chaDelLimit = num;
       message.channel.send(
-        `**${rast}  Changed To : ${config[message.guild.id].chaDelLimit} <a:mars_44:791126119004110919>**`
+        `**${rast}  Changed To : ${config[message.guild.id].chaDelLimit} **`
       );
     }
     if (message.content.startsWith(prefix + "anti channelD")) {
       if (cooldown.has(message.author.id)) {
         return message.channel
-          .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+          .send(` | Please wait for 10 second`)
           .then(m => {
             m.delete({ timeout: cdtime * 600 });
           });
@@ -429,13 +423,13 @@ client.on("message", message => {
         );
       config[message.guild.id].chaCrLimit = num;
       message.channel.send(
-        `**${rast}  Changed To : ${config[message.guild.id].chaCrLimit} <a:mars_44:791126119004110919>**`
+        `**${rast}  Changed To : ${config[message.guild.id].chaCrLimit} **`
       );
     }
     if (message.content.startsWith(prefix + "anti time")) {
       if (cooldown.has(message.author.id)) {
         return message.channel
-          .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+          .send(` | Please wait for 10 second`)
           .then(m => {
             m.delete({ timeout: cdtime * 600 });
           });
@@ -454,7 +448,7 @@ client.on("message", message => {
         );
       config[message.guild.id].time = num;
       message.channel.send(
-        `**${rast}  Changed To : ${config[message.guild.id].time} <a:mars_44:791126119004110919>**`
+        `**${rast}  Changed To : ${config[message.guild.id].time} **`
       );
     }
     fs.writeFile("./configg.json", JSON.stringify(config, null, 2), function(
@@ -937,7 +931,7 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "anti bot on")) {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -956,7 +950,7 @@ client.on("message", message => {
     antibots[message.guild.id] = {
       onoff: "On"
     };
-    message.channel.send(`**${rast}  AntiBot Is \`Enable\` <a:mars_44:791126119004110919>.**`);
+    message.channel.send(`**${rast}  AntiBot Is \`Enable\` **`);
     fs.writeFile("./antibots.json", JSON.stringify(antibots), err => {
       if (err)
         console.error(err).catch(err => {
@@ -970,7 +964,7 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "anti bot off")) {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -986,7 +980,7 @@ client.on("message", message => {
     antibots[message.guild.id] = {
       onoff: "Off"
     };
-    message.channel.send(`**${rast}  AntiBot Is \`Disable\` <a:mars_44:791126119004110919>.**`);
+    message.channel.send(`**${rast}  AntiBot Is \`Disable\` **`);
     fs.writeFile("./antibots.json", JSON.stringify(antibots), err => {
       if (err)
         console.error(err).catch(err => {
@@ -1015,7 +1009,7 @@ client.on("message", message => {
   if (message.content === prefix + "setting") {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -1032,7 +1026,7 @@ client.on("message", message => {
     const black = new Discord.MessageEmbed()
       .setAuthor(client.user.username, client.user.avatarURL())
       .setThumbnail(client.user.avatarURL()).setDescription(`AntiBan
-Enabled: <a:mars_40:791104185424805918> 
+Enabled: 
 Maximum Ban : ${config[message.guild.id].banLimit}
 -
 AntiKick
@@ -1040,7 +1034,7 @@ Enabled: <a:mars_40:791104185424805918>
 Maximum Kick : ${config[message.guild.id].kickLimits}
 -
 AntiChannelD
-Enabled: <a:mars_40:791104185424805918> 
+Enabled: 
 Maximum Delete : ${config[message.guild.id].chaDelLimit}
 -
 AntiChannelC
@@ -1052,11 +1046,11 @@ Enabled: <a:mars_40:791104185424805918>
 Maximum Delete : ${config[message.guild.id].roleDelLimit}
 -
 AntiRoleC
-Enabled: <a:mars_40:791104185424805918> 
+Enabled: 
 Maximum Create : ${config[message.guild.id].roleCrLimits}
 -
 AntiTime
-Enabled: <a:mars_40:791104185424805918> 
+Enabled: 
 Maximum Time : ${config[message.guild.id].time}
 
 `);
@@ -1093,7 +1087,7 @@ client.on("message", async message => {
     if (!message.guild.me.hasPermission("BAN_MEMBERS"))
       return message.reply("I need ``BAN_MEMBERS`` permission ");
     message.guild.members.unban(toBan);
-    message.channel.send(`${toBan} has been unbanned from the server <a:mars_44:791126119004110919>`);
+    message.channel.send(`${toBan} has been unbanned from the server `);
   }
 });
 /////
@@ -1204,7 +1198,7 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "serverinfo")) {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -1225,7 +1219,7 @@ client.on("message", message => {
       .addField("🎙server channels", `${message.guild.channels.cache.size}`)
       .addField("🌍server region", `${message.guild.region}`)
       .addField("📆created in", `${message.guild.createdAt.toLocaleString()}`)
-      .addField("<a:mars_20:736950254036975687>Boost", `${message.guild.premiumSubscriptionCount}`)
+      .addField("Boost", `${message.guild.premiumSubscriptionCount}`)
 
       .setColor("#808080")
       .setFooter(`Requsted by ${message.author.username}`);
@@ -1239,7 +1233,7 @@ client.on("message", prof => {
   if (prof.content.startsWith(prefix + "userinfo")) {
     if (cooldown.has(prof.author.id)) {
       return prof.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -1274,7 +1268,7 @@ client.on("message", message => {
   if (args[0] === prefix + "kick") {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -1306,7 +1300,7 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "bans")) {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -1434,7 +1428,7 @@ client.on("message", async message => {
   if (command == "clear" || command == "clear") {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -1501,30 +1495,30 @@ client.on("message", async message => {
       )
     )
       return message.channel.send(
-        "<a:mars_27:761215742866751509> | You don't have Permissions do to this."
+        " | You don't have Permissions do to this."
       );
     let user = message.guild.member(
       message.mentions.users.first() ||
         message.guild.members.cache.find(x => x.id == args[0])
     );
-    if (!user) return message.channel.send("<a:mars_27:761215742866751509> | Member not found!");
+    if (!user) return message.channel.send(" | Member not found!");
     let bot = message.guild.member(client.user);
     if (user.user.id == client.user.id) return message.channel.send("lol no");
     if (user.user.id == message.guild.owner.id)
-      return message.channel.send(`<a:mars_27:761215742866751509> | You can't ${mode} the owner!`);
+      return message.channel.send(` | You can't ${mode} the owner!`);
     if (
       user.roles.highest.position >= message.member.roles.highest.position &&
       message.author.id !== message.guild.ownerID
     )
       return message.channel.send(
-        `<a:mars_27:761215742866751509> | You can't ${mode} people higher ranked than yourself!`
+        ` | You can't ${mode} people higher ranked than yourself!`
       );
     if (user.roles.highest.position >= bot.roles.highest.position)
       return message.channel.send(
-        `<a:mars_27:761215742866751509> | I can't ${mode} people who are higher ranked than me!`
+        ` | I can't ${mode} people who are higher ranked than me!`
       );
     if (!user[`${mode == "ban" ? "bann" : mode}able`])
-      return message.channel.send(`<a:mars_27:761215742866751509> | Specified user is not ${mode}able.`);
+      return message.channel.send(` | Specified user is not ${mode}able.`);
     user[mode](
       mode == "ban"
         ? { days: 7, reason: `Banned by ${message.author.tag}` }
@@ -1548,7 +1542,7 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "problem off")) {
     if (cooldown.has(message.author.id)) {
       return message.channel
-        .send(`<a:mars_46:805955008545816576> | Please wait for 10 second`)
+        .send(` | Please wait for 10 second`)
         .then(m => {
           m.delete({ timeout: cdtime * 600 });
         });
@@ -1562,7 +1556,7 @@ client.on("message", message => {
     if (!message.channel.guild) return;
     if (!message.member.hasPermission("MANAGE_GUILD"))
       return message.channel.send(
-        "**Sorry , But You Dont Have `MANAGE_GUILD` Permission <a:mars_27:761215742866751509>.**"
+        "**Sorry , But You Dont Have `MANAGE_GUILD` Permission **"
       );
     spread[message.guild.id] = {
       onoff: "Off"
@@ -1595,12 +1589,12 @@ client.on("message", message => {
     if (!message.channel.guild) return;
     if (!message.member.hasPermission("MANAGE_GUILD"))
       return message.channel.send(
-        "**Sorry , But You Dont Have `MANAGE_GUILD` Permission <a:mars_27:761215742866751509>.**"
+        "**Sorry , But You Dont Have `MANAGE_GUILD` Permission **"
       );
     spread[message.guild.id] = {
       onoff: "On"
     };
-    message.channel.send(`**AntiProblem Is \`Enable\` <a:mars_44:791126119004110919>.**`);
+    message.channel.send(`**AntiProblem Is \`Enable\` **`);
     fs.writeFile("./spread.json", JSON.stringify(spread), err => {
       if (err)
         console.error(err).catch(err => {
@@ -1621,7 +1615,7 @@ client.on("message", message => {
       };
     if (spread[message.guild.id].onoff === "Off") return;
     message.delete();
-    return message.reply(`**You Dont Have \`MANAGE_EMOJIS\` Permission <a:mars_27:761215742866751509>.**`);
+    return message.reply(`**You Dont Have \`MANAGE_EMOJIS\` Permission **`);
   }
 });
 client.on("message", message => {
@@ -1635,7 +1629,7 @@ client.on("message", message => {
       };
     if (spread[message.guild.id].onoff === "Off") return;
     message.delete();
-    return message.reply(`**You Dont Have \`MENTION_EVERYONE\` Permission <a:mars_27:761215742866751509>.**`);
+    return message.reply(`**You Dont Have \`MENTION_EVERYONE\` Permission **`);
   }
 });
 client.on("message", message => {
@@ -1649,6 +1643,6 @@ client.on("message", message => {
       };
     if (spread[message.guild.id].onoff === "Off") return;
     message.delete();
-    return message.reply(`**You Dont Have \`MENTION_EVERYONE\` Permission <a:mars_27:761215742866751509>.**`);
+    return message.reply(`**You Dont Have \`MENTION_EVERYONE\` Permission **`);
   }
 });
