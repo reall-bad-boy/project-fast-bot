@@ -1221,7 +1221,7 @@ client.on("message", message => {
       .addField("📆created in", `${message.guild.createdAt.toLocaleString()}`)
       .addField("Boost", `${message.guild.premiumSubscriptionCount}`)
 
-      .setColor("#808080")
+      .setColor("BLACK")
       .setFooter(`Requsted by ${message.author.username}`);
     message.channel.send(EMBED);
   }
@@ -1361,8 +1361,7 @@ client.on("message", message => {
       .addField("**My ID**", `[ ${client.user.id} ]`, true)
       .addField("**DiscordJS**", `[ ${Discord.version} ]`, true)
       .addField("**NodeJS**", `[ ${process.version} ]`, true)
-      .addField("**Bot-Owners**", `[1-@!             ᘉᗩᖇᔕ ᵈⁱˢᶜᵒʳᵈ ᵇᵒᵗ#0001]
-[2-!           𝑍𝑎𝑛𝑎ᵈⁱˢᶜᵒʳᵈ ᵇᵒᵗ#4702]`, true)
+      .addField("**Bot-Owners**", `!     ʙʟᴀᴄᴋ sᴛᴀʀ | "BAD BOY"#3140`, true)
       .addField("**My Prefix**", `[ ${prefix} ]`, true)
       .addField("**My Language**", `[ Java Script ]`, true)
       .setFooter("Security");
@@ -1648,22 +1647,7 @@ client.on("message", message => {
 });
 
 
-client.on('message', message => {
-    if (message.content.startsWith("$avatar")) {
-        var mentionned = message.mentions.users.first();
-    var x5bzm;
-      if(mentionned){
-          var x5bzm = mentionned;
-      } else {
-          var x5bzm = message.author;
- 
-      }
-        const embed = new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setImage(`${x5bzm.avatarURL}`)
-      message.channel.sendEmbed(embed);
-    }
-});
+
 
 
 
